@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<canvas width="800" height="300" id="canvas" data-img='@ViewData["img"]'></canvas>
+<div class="tools">
+    <div class="tool"><span class="glyphicon glyphicon-zoom-in"></span></div>
+    <div class="tool"><span class="glyphicon glyphicon-zoom-in"></span></div>
+    <div class="tool"><span class="glyphicon glyphicon-zoom-in"></span></div>
+    <div class="tool"><span class="glyphicon glyphicon-zoom-in"></span></div>
+</div>
+@section Scripts {
+<script src="~/Scripts/sketch.js"></script>
+<script src="~/Scripts/app.js"></script>
+}

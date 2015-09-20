@@ -1,0 +1,177 @@
+﻿#canvasArea {
+    position: absolute; 
+    left: 0; 
+    top: 158px; 
+    bottom: 0; 
+    right: 0; 
+    background: #ccd6e5;
+}
+
+#canvas {
+    background: #fff;
+    margin-left: 4px;
+    margin-top: 4px;
+    cursor: url(../Images/000000.cur),url(../Images/000000.gif),none;
+}
+
+#spinner_back {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: 0.4;
+    z-index: 500;
+}
+
+#spinner_front {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    left: 50%;
+    margin-left: -40px;
+    height: 80px;
+    width: 80px;
+    z-index: 550;
+}
+
+#spinner_front img {
+    width: 80px;
+    height: 80px;
+}
+
+.header {
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 10px 10px 10px;
+}
+
+.ribbon {
+    height: 108px;
+    background: #f5f6f7;
+}
+
+.ribbon .group {
+    height: 108px;
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+.ribbon .group .group-buttons {
+    height: 85px;
+}
+
+.ribbon .group .group-buttons .group-colors {
+    height: 46px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ribbon .group .group-buttons .group-button-lg {
+    height: 70px;
+    width: 70px;
+    margin: 10px 10px 5px 10px;
+    float: left;
+    text-align: center;
+}
+
+.ribbon .group .group-buttons .group-button-lg:hover {
+    background-color: #cbe4fd;
+}
+    .ribbon .group .group-buttons .group-button-lg .icon {
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+        width: 48px;
+        height: 48px;
+        background: url(../Images/sprite.png) no-repeat;
+        background-size: 288px 48px;
+    }
+
+    .ribbon .group .group-buttons .group-button-lg .icon.save {
+        background-position: -96px 0;
+    }
+
+    .ribbon .group .group-buttons .group-button-lg .icon.cancel {
+        background-position: -144px 0;
+    }
+
+    .ribbon .group .group-buttons .group-button-lg .icon.zoomin {
+        background-position: -48px 0;
+    }
+
+    .ribbon .group .group-buttons .group-button-lg .icon.zoomout {
+        background-position: 0 0;
+    }
+
+    .ribbon .group .group-buttons .group-button-lg .icon.large {
+        background-position: -240px 0;
+    }
+
+    .ribbon .group .group-buttons .group-button-lg .icon.small {
+        background-position: -192px 0;
+    }
+
+    .ribbon .group .group-buttons .group-button-lg span {
+        width: 48px;
+        text-align: center;
+    }
+
+.ribbon .group .group-buttons .group-button-sm {
+    height: 34px;
+    width: 34px;
+    border: 1px solid #ccc;
+    margin: 1px;
+    float: left;
+}
+
+.ribbon .group .group-buttons .group-button-sm:hover {
+    border: 1px solid #64a5e7;
+}
+
+.ribbon .group .group-buttons .group-button-sm img {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #fff;
+}
+
+.ribbon .group .group-buttons .group-button-sm img:hover {
+    border: 1px solid #cbe4fd;
+}
+
+
+.ribbon .group .group-title {
+    height: 23px;
+    text-align: center;
+}
+
+.ribbon .group-divider {
+    height: 98px;
+    float: left;
+    width: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #e2e3e4;
+}
+
+.cursor_000000 { cursor: url(../Images/000000.png),auto;}
+.cursor_006432 { cursor: url(../Images/006432.png),auto;}
+.cursor_009664 { cursor: url(../Images/009664.png),auto;}
+.cursor_0096ff { cursor: url(../Images/0096ff.png),auto;}
+.cursor_00c800 { cursor: url(../Images/00c800.png),auto;}
+.cursor_230fd2 { cursor: url(../Images/230fd2.png),auto;}
+.cursor_5a0fc8 { cursor: url(../Images/5a0fc8.png),auto;}
+.cursor_64ff00 { cursor: url(../Images/64ff00.png),auto;}
+.cursor_c80fa0 { cursor: url(../Images/c80fa0.png),auto;}
+.cursor_ff0000 { cursor: url(../Images/ff0000.png),auto;}
+.cursor_ff0064 { cursor: url(../Images/ff0064.png),auto;}
+.cursor_ff5000 { cursor: url(../Images/ff5000.png),auto;}
+.cursor_ff7d00 { cursor: url(../Images/ff7d00.png),auto;}
+.cursor_ffc800 { cursor: url(../Images/ffc800.png),auto;}
+.cursor_ffff00 { cursor: url(../Images/ffff00.png),auto;}
+.cursor_ffffff { cursor: url(../Images/ffffff.png),auto;}

@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="spinner_back"></div>
+<div id="spinner_front"><img src="~/Images/Loading.gif" /></div>
+<div class="header">
+    Image Annotation
+</div>
+<div class="ribbon">
+    <div class="group">
+        <div class="group-buttons">
+            <div class="group-button-lg" id="btnSave"><div class="icon save"></div><span>Save</span></div>
+            <div class="group-button-lg" id="btnCancel"><div class="icon cancel"></div><span>Cancel</span></div>
+        </div>
+        <div class="group-title">File</div>
+    </div>
+    <div class="group-divider"></div>
+
+    <div class="group">
+        <div class="group-buttons">
+            <div class="group-button-lg" id="btnZoomin"><div class="icon zoomin"></div><span>Zoom-in</span></div>
+            <div class="group-button-lg" id="btnZoomout"><div class="icon zoomout"></div><span>Zoom-out</span></div>
+        </div>
+        <div class="group-title">Zoom</div>
+    </div>
+    <div class="group-divider"></div>
+
+    <div class="group">
+        <div class="group-buttons">
+            <div class="group-button-lg" id="btnLarger"><div class="icon large"></div><span>Larger</span></div>
+            <div class="group-button-lg" id="btnSmaller"><div class="icon small"></div><span>Smaller</span></div>
+        </div>
+        <div class="group-title">Pen Size</div>
+    </div>
+    <div class="group-divider"></div>
+
+    <div class="group">
+        <div class="group-buttons">
+            <div class="group-colors" style="padding-top: 9px;">
+                <div class="group-button-sm" style="background-color: #ffffff"><a href="#canvas" data-color="#ffffff" onclick="colorClick('ffffff');"><img src="~/Images/34px.png" /></a></div>
+                <div class="group-button-sm" style="background-color: #000000"><a href="#canvas" data-color="#000000" onclick="colorClick('000000');"><img src="~/Images/34px.png" /></a></div>
+                <div class="group-button-sm" style="background-color: #ff0000"><a href="#canvas" data-color="#ff0000" onclick="colorClick('ff0000');"><img src="~/Images/34px.png" /></a></div>
+                <div class="group-button-sm" style="background-color: #ff5000"><a href="#canvas" data-color="#ff5000" onclick="colorClick('ff5000');"><img src="~/Images/34px.png" /></a></div>
+                <div class="group-button-sm" style="background-color: #ff7d00"><a href="#canvas" data-color="#ff7d00" onclick="colorClick('ff7d00');"><img src="~/Images/34px.png" /></a></div>
+                <div class="group-button-sm" style="background-color: #ffc800"><a href="#canvas" data-color="#ffc800" onclick="colorClick('ffc800');"><img src="~/Images/34px.png" /></a></div>
+                <div class="group-button-sm" style="background-color: #ffff00"><a href="#canvas" data-color="#ffff00" onclick="colorClick('ffff00');"><img src="~/Images/34px.png" /></a></div>
+                <div class="group-button-sm" style="background-color: #64ff00"><a href="#canvas" data-color="#64ff00" onclick="colorClick('64ff00');"><img src="~/Images/34px.png" /></a></div>
+            </div>
+            <div class="group-colors">
+                <div class="group-button-sm" style="background-color: #00c800"><a href="#canvas" data-color="#00c800" onclick="colorClick('00c800');"><img src="~/Images/34px.png" /></a></div>
+                <div class="group-button-sm" style="background-color: #006432"><a href="#canvas" data-color="#006432" onclick="colorClick('006432');"><img src="~/Images/34px.png" /></a></div>
+                <div class="group-button-sm" style="background-color: #009664"><a href="#canvas" data-color="#009664" onclick="colorClick('009664');"><img src="~/Images/34px.png" /></a></div>
+                <div class="group-button-sm" style="background-color: #0096ff"><a href="#canvas" data-color="#0096ff" onclick="colorClick('0096ff');"><img src="~/Images/34px.png" /></a></div>
+                <div class="group-button-sm" style="background-color: #230fd2"><a href="#canvas" data-color="#230fd2" onclick="colorClick('230fd2');"><img src="~/Images/34px.png" /></a></div>
+                <div class="group-button-sm" style="background-color: #5a0fc8"><a href="#canvas" data-color="#5a0fc8" onclick="colorClick('5a0fc8');"><img src="~/Images/34px.png" /></a></div>
+                <div class="group-button-sm" style="background-color: #c80fa0"><a href="#canvas" data-color="#c80fa0" onclick="colorClick('c80fa0');"><img src="~/Images/34px.png" /></a></div>
+                <div class="group-button-sm" style="background-color: #ff0064"><a href="#canvas" data-color="#ff0064" onclick="colorClick('ff0064');"><img src="~/Images/34px.png" /></a></div>
+            </div>
+        </div>
+        <div class="group-title">Colors</div>
+    </div>
+    <div class="group-divider"></div>
+</div>
+<div id="canvasArea">
+    <canvas width="300" height="300" id="canvas" data-img='@ViewData["img"]'></canvas>
+</div>
+
+<input type="hidden" id="resource" value='@ViewData["resource"]' />
+<input type="hidden" id="refresh_token" value='@ViewData["refresh_token"]' />
+<input type="hidden" id="file_put" value='@ViewData["file_put"]' />
+<input type="hidden" id="return_url" value='@ViewData["return_url"]' />
+
+@section Scripts {
+    <script src="~/Scripts/sketch.js"></script>
+    <script src="~/Scripts/app.js"></script>
+}

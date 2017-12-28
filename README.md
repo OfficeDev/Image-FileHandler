@@ -39,3 +39,5 @@ This repository contains a file handler add-in for Office 365 that allows .png f
 3. Click on the **Register Handler** button on the top right and select new File Handler.
 4. Provide the following details in your registration before clicking Save (exact URLs may vary):
 ![](http://i.imgur.com/R6RsmfN.png)
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
